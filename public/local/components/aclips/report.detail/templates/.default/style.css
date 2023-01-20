@@ -1,0 +1,50 @@
+#workarea-content.loader {
+    opacity: 0.8;
+}
+
+#workarea-content.no-report {
+    text-align: center;
+}
+
+#workarea-content.no-report:before {
+    content: 'Отчёт не сформирован';
+    position: relative;
+    margin-top: -1.3em;
+    display: block;
+    top: 50%;
+    font-size: 35px;
+    color: #989898;
+}
+
+#workarea-content.loader:before {
+    content: 'Загрузка...';
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin-top: -1.5em;
+    left: 45%;
+    top: 40%;
+    font-size: 35px;
+    color: #989898;
+}
+
+#workarea-content.loader .errors, #workarea-content.loader #report-wrapper {
+    display: none;
+}
+
+#report-wrapper table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+#report-wrapper table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+}
+#report-wrapper table td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+}
